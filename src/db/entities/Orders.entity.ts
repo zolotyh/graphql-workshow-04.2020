@@ -6,10 +6,10 @@ import {
   ManyToOne,
   OneToMany
 } from "typeorm";
-import { OrderDetails } from "./OrderDetails";
-import { Customers } from "./Customers";
-import { Employees } from "./Employees";
-import { Shippers } from "./Shippers";
+import { OrderDetails } from "./OrderDetails.entity";
+import { Customers } from "./Customers.entity";
+import { Employees } from "./Employees.entity";
+import { Shippers } from "./Shippers.entity";
 
 @Index("pk_orders", ["orderId"], { unique: true })
 @Entity("orders", { schema: "public" })

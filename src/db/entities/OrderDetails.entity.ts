@@ -1,6 +1,6 @@
 import { Column, Entity, Index, JoinColumn, ManyToOne } from "typeorm";
-import { Orders } from "./Orders";
-import { Products } from "./Products";
+import { Orders } from "./Orders.entity";
+import { Products } from "./Products.entity";
 
 @Index("pk_order_details", ["orderId", "productId"], { unique: true })
 @Entity("order_details", { schema: "public" })

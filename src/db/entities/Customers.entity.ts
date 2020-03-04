@@ -6,8 +6,8 @@ import {
   ManyToMany,
   OneToMany
 } from "typeorm";
-import { CustomerDemographics } from "./CustomerDemographics";
-import { Orders } from "./Orders";
+import { CustomerDemographics } from "./CustomerDemographics.entity";
+import { Orders } from "./Orders.entity";
 
 @Index("pk_customers", ["customerId"], { unique: true })
 @Entity("customers", { schema: "public" })

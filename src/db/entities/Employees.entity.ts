@@ -8,8 +8,8 @@ import {
   ManyToOne,
   OneToMany
 } from "typeorm";
-import { Territories } from "./Territories";
-import { Orders } from "./Orders";
+import { Territories } from "./Territories.entity";
+import { Orders } from "./Orders.entity";
 
 @Index("pk_employees", ["employeeId"], { unique: true })
 @Entity("employees", { schema: "public" })

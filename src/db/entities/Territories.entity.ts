@@ -6,8 +6,8 @@ import {
   ManyToMany,
   ManyToOne
 } from "typeorm";
-import { Employees } from "./Employees";
-import { Region } from "./Region";
+import { Employees } from "./Employees.entity";
+import { Region } from "./Region.entity";
 
 @Index("pk_territories", ["territoryId"], { unique: true })
 @Entity("territories", { schema: "public" })

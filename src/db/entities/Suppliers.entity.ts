@@ -1,5 +1,5 @@
 import { Column, Entity, Index, OneToMany } from "typeorm";
-import { Products } from "./Products";
+import { Products } from "./Products.entity";
 
 @Index("pk_suppliers", ["supplierId"], { unique: true })
 @Entity("suppliers", { schema: "public" })

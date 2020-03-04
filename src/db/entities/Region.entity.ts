@@ -1,5 +1,5 @@
 import { Column, Entity, Index, OneToMany } from "typeorm";
-import { Territories } from "./Territories";
+import { Territories } from "./Territories.entity";
 
 @Index("pk_region", ["regionId"], { unique: true })
 @Entity("region", { schema: "public" })
