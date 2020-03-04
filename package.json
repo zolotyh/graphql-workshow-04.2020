@@ -5,7 +5,7 @@
   "author": "Alexey Zolotykh <aazolotyh@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "ts-node src/index.ts | jq",
     "typeorm": "ts-node node_modules/.bin/typeorm migration:generate",
     "migration:generate": "npm run typeorm migration:generate -- -n",
     "migration:run": "npm run typeorm migration:run",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@types/node": "^13.7.7",
+    "node-jq": "^1.11.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.8.3"
   }
