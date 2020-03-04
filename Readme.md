@@ -4,6 +4,6 @@
 
 ```bash 
 docker-compose up -d #running postgres and install test data 
-yarn i
+yarn
 yarn start
 ```
