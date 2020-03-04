@@ -4,6 +4,11 @@
   "main": "index.js",
   "author": "Alexey Zolotykh <aazolotyh@gmail.com>",
   "license": "MIT",
+  "scripts": {
+      "migration:generate": "npm run typeorm migration:generate -- -n",
+      "migration:run": "npm run typeorm migration:run",
+      "migration:revert": "npm run typeorm migration:revert"
+  },
   "dependencies": {
     "dotenv": "^8.2.0",
     "ts-node": "^8.6.2",
